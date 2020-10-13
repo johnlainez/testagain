@@ -1,0 +1,60 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-13T00:42:48.439Z",
+        "line": 3,
+        "name": "Run a non failing scenario",
+        "description": "",
+        "id": "test-cucumber-reporting-plugin;run-a-non-failing-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "a successful step",
+            "match": {
+              "location": "stepdefs.StepDefinitions.aSuccessfulStep()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-13T00:42:48.540Z",
+        "line": 6,
+        "name": "Run a failing scenario",
+        "description": "",
+        "id": "test-cucumber-reporting-plugin;run-a-failing-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.fail(Assert.java:96)\r\n\tat stepdefs.StepDefinitions.aNotSuccessfulStep(StepDefinitions.java:16)\r\n\tat ✽.a not successful step(file:///C:/Users/JE/Desktop/Workspace/Test111/src/test/resources/features/demo.feature:7)\r\n",
+              "duration": 3000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "a not successful step",
+            "match": {
+              "location": "stepdefs.StepDefinitions.aNotSuccessfulStep()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Test cucumber reporting plugin",
+    "description": "",
+    "id": "test-cucumber-reporting-plugin",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/demo.feature",
+    "tags": []
+  }
+]
